@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/FPGA_Projects/SPI_OSC/SPI_OSC.srcs/constrs_1/imports/XDC/CmodA7_Master.xdc rfile:../../../SPI_OSC.srcs/constrs_1/imports/XDC/CmodA7_Master.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:72 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN U1    IOSTANDARD LVCMOS33 } [get_ports { SS[0] }]; #IO_L3N_T0_DQS_34 Sch=pio[31]
+set_property src_info {type:XDC file:1 line:73 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN W2    IOSTANDARD LVCMOS33 } [get_ports { MOSI }]; #IO_L5N_T0_34 Sch=pio[32]
+set_property src_info {type:XDC file:1 line:74 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V2    IOSTANDARD LVCMOS33 } [get_ports { SCK }]; #IO_L5P_T0_34 Sch=pio[33]

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 26 09:25:10 2019
+# Process ID: 1060
+# Current directory: C:/FPGA_Projects/SPI_OSC/SPI_OSC.runs/design_1_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log design_1_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ilmb_v10_0.tcl
+# Log file: C:/FPGA_Projects/SPI_OSC/SPI_OSC.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0.vds
+# Journal file: C:/FPGA_Projects/SPI_OSC/SPI_OSC.runs/design_1_ilmb_v10_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/Lawrence Carslake/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source design_1_ilmb_v10_0.tcl -notrace
+WARNING: [Board 49-91] Board repository path '{C:Xilinxivado-boards-master
+ewoard_files}' does not exist, it will not be used to search board files.
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 338.418 ; gain = 88.777
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Lenovo Share'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 367.289 ; gain = 28.871
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_ilmb_v10_0, cache-ID = 300c88dfa8287e8b.
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 26 09:25:31 2019...

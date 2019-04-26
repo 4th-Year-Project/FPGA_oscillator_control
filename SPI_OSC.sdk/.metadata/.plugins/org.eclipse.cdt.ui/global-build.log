@@ -1,0 +1,267 @@
+10:47:54 **** Build of project SPI_OSC_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/spi_v4_4/src"
+make -C microblaze_0/libsrc/spi_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/spi_v4_4/src"
+make -C microblaze_0/libsrc/spi_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling spi"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+10:48:06 **** Build of configuration Debug for project SPI_OSC ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SPI_OSC_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../SPI_OSC_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: SPI_OSC.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SPI_OSC_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SPI_OSC.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SPI_OSC.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SPI_OSC.elf  |tee "SPI_OSC.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	SPI_OSC.elf
+'Finished building: SPI_OSC.elf.size'
+' '
+10:51:34 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+make: Nothing to be done for 'all'.
+10:55:30 **** Auto Build of configuration Debug for project SPI_OSC ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SPI_OSC_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiProgramOsc':
+../src/helloworld.c:76:6: warning: unused variable 'Count' [-Wunused-variable]
+  u32 Count;
+      ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: SPI_OSC.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SPI_OSC_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SPI_OSC.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SPI_OSC.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SPI_OSC.elf  |tee "SPI_OSC.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8692	    328	   3212	  12232	   2fc8	SPI_OSC.elf
+'Finished building: SPI_OSC.elf.size'
+' '
+10:55:33 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+make: Nothing to be done for 'all'.
+10:58:00 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+make: Nothing to be done for 'all'.
+11:03:38 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+make: Nothing to be done for 'all'.
+11:18:49 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SPI_OSC_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiProgramOsc':
+../src/helloworld.c:76:6: warning: unused variable 'Count' [-Wunused-variable]
+  u32 Count;
+      ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: SPI_OSC.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SPI_OSC_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SPI_OSC.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SPI_OSC.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SPI_OSC.elf  |tee "SPI_OSC.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8692	    328	   3212	  12232	   2fc8	SPI_OSC.elf
+'Finished building: SPI_OSC.elf.size'
+' '
+11:19:22 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+make: Nothing to be done for 'all'.
+11:19:42 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+make: Nothing to be done for 'all'.
+11:21:40 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SPI_OSC_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiProgramOsc':
+../src/helloworld.c:76:6: warning: unused variable 'Count' [-Wunused-variable]
+  u32 Count;
+      ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: SPI_OSC.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SPI_OSC_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SPI_OSC.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SPI_OSC.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SPI_OSC.elf  |tee "SPI_OSC.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8692	    328	   3212	  12232	   2fc8	SPI_OSC.elf
+'Finished building: SPI_OSC.elf.size'
+' '
+11:22:42 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SPI_OSC_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiProgramOsc':
+../src/helloworld.c:76:6: warning: unused variable 'Count' [-Wunused-variable]
+  u32 Count;
+      ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: SPI_OSC.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SPI_OSC_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SPI_OSC.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SPI_OSC.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SPI_OSC.elf  |tee "SPI_OSC.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8692	    328	   3212	  12232	   2fc8	SPI_OSC.elf
+'Finished building: SPI_OSC.elf.size'
+' '
+11:22:54 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+make: Nothing to be done for 'all'.
+11:23:37 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SPI_OSC_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiProgramOsc':
+../src/helloworld.c:76:6: warning: unused variable 'Count' [-Wunused-variable]
+  u32 Count;
+      ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: SPI_OSC.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SPI_OSC_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SPI_OSC.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SPI_OSC.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SPI_OSC.elf  |tee "SPI_OSC.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8692	    328	   3212	  12232	   2fc8	SPI_OSC.elf
+'Finished building: SPI_OSC.elf.size'
+' '
+11:24:07 **** Auto Build of configuration Debug for project SPI_OSC ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SPI_OSC_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiProgramOsc':
+../src/helloworld.c:76:6: warning: unused variable 'Count' [-Wunused-variable]
+  u32 Count;
+      ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: SPI_OSC.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SPI_OSC_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SPI_OSC.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SPI_OSC.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SPI_OSC.elf  |tee "SPI_OSC.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8692	    328	   3212	  12232	   2fc8	SPI_OSC.elf
+'Finished building: SPI_OSC.elf.size'
+' '
+11:24:09 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+make: Nothing to be done for 'all'.
+11:49:40 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+make: Nothing to be done for 'all'.
+12:05:13 **** Auto Build of configuration Debug for project SPI_OSC ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SPI_OSC_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiProgramOsc':
+../src/helloworld.c:76:6: warning: unused variable 'Count' [-Wunused-variable]
+  u32 Count;
+      ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: SPI_OSC.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SPI_OSC_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SPI_OSC.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SPI_OSC.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SPI_OSC.elf  |tee "SPI_OSC.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8692	    328	   3212	  12232	   2fc8	SPI_OSC.elf
+'Finished building: SPI_OSC.elf.size'
+' '
+12:06:00 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+make: Nothing to be done for 'all'.
+12:07:15 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+make: Nothing to be done for 'all'.
+12:08:09 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+make: Nothing to be done for 'all'.
+12:15:28 **** Incremental Build of configuration Debug for project SPI_OSC ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../SPI_OSC_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiProgramOsc':
+../src/helloworld.c:76:6: warning: unused variable 'Count' [-Wunused-variable]
+  u32 Count;
+      ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: SPI_OSC.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../SPI_OSC_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "SPI_OSC.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SPI_OSC.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size SPI_OSC.elf  |tee "SPI_OSC.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8692	    328	   3212	  12232	   2fc8	SPI_OSC.elf
+'Finished building: SPI_OSC.elf.size'
+' '
