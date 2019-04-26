@@ -44,7 +44,7 @@ static XSpi  SpiInstance;	 /* The instance of the SPI device */
  * The following variables are used to read and write to the  Spi device, they
  * are global to avoid having large buffers on the stack.
  */
-u8 Registers[6][BUFFER_SIZE] = { //Reversed and upside down!
+u8 Registers[6][BUFFER_SIZE] = {
 		{0x05, 0x00, 0x58, 0x00},
 		{0x24, 0x00, 0x95, 0x00},
 		{0xB3, 0x04, 0x80, 0x00},

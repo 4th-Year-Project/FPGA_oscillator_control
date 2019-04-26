@@ -529,3 +529,4 @@ con
 ----------------End of Script----------------
 
 12:15:32 INFO  : Launch script is exported to file 'C:\FPGA_Projects\SPI_OSC\SPI_OSC.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_spi_osc.elf_on_local.tcl'
+13:57:30 INFO  : Disconnected from the channel tcfchan#17.
